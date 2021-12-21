@@ -1,5 +1,6 @@
 package com.example.postrequest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etName: EditText
     private lateinit var etLocation: EditText
     private lateinit var btAdd: Button
-
+    private lateinit var btUpdateDelete: Button
     private lateinit var users: Users
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,6 +67,10 @@ class MainActivity : AppCompatActivity() {
                 }
 
             })
+        }
+        btUpdateDelete.setOnClickListener {
+            val intent = Intent(this,MainUpdateDelete::class.java)
+            startActivity(intent)
         }
     }
 }

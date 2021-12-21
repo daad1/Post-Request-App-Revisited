@@ -44,7 +44,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add"
+            android:backgroundTint="#89ADD9"
        />
+        <Button
+            android:id="@+id/btnUpdateDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update / delete user"
+            android:backgroundTint="#89ADD9"
+            />
 
     </LinearLayout>
 
